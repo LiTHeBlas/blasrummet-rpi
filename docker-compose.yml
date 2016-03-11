@@ -1,3 +1,11 @@
+clock:
+  build: clock
+  devices:
+    - /dev/gpiomem
+  environment:
+    CLOCK_GPIO_PIN: 13
+    CLOCK_PULSE_DURATION: 0.5
+
 door:
   build: door
   cap_add:
