@@ -9,10 +9,8 @@ clock:
 
 door:
   build: door
-  cap_add:
-    - SYS_RAWIO
   devices:
-    - /dev/mem
+    - /dev/gpiomem
   environment:
     LOCK_GPIO_PIN: 11
     UNLOCK_DURATION: 10
