@@ -5,6 +5,7 @@ clock:
   environment:
     CLOCK_GPIO_PIN: 13
     CLOCK_PULSE_DURATION: 0.5
+  restart: always
 
 door:
   build: door
@@ -21,6 +22,7 @@ door:
     OPBEAT_APP_ID: 37531498e9
   ports:
     - "5000:5000"
+  restart: always
 
 jukebox:
   build: jukebox
@@ -31,4 +33,4 @@ jukebox:
   ports:
     - "6600:6600"
     - "6680:6680"
-
+  restart: always
